@@ -1,8 +1,8 @@
 package main
 
 func main(){
-	a4 := 10;
+	4a := 10;
 	b := 15;
 	c := 0;
-	c = a4 + b;
+	c = 4a + b;
 }
