@@ -1,0 +1,333 @@
+   yacc.py: 362:PLY: PARSE DEBUG START
+   yacc.py: 410:
+   yacc.py: 411:State  : 0
+   yacc.py: 434:Stack  : . LexToken(PACKAGE,'package',6,0)
+   yacc.py: 445:Action : Shift and goto state 2
+   yacc.py: 410:
+   yacc.py: 411:State  : 2
+   yacc.py: 434:Stack  : PACKAGE . LexToken(IDENTIFIER,'main',6,8)
+   yacc.py: 445:Action : Shift and goto state 3
+   yacc.py: 410:
+   yacc.py: 411:State  : 3
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER . LexToken(SEMICOLON,';',8,14)
+   yacc.py: 445:Action : Shift and goto state 4
+   yacc.py: 410:
+   yacc.py: 411:State  : 4
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON . LexToken(FUNC,'func',8,14)
+   yacc.py: 473:Action : Reduce rule [empty -> <empty>] with [] and goto state 7
+   yacc.py: 548:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 7
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON empty . LexToken(FUNC,'func',8,14)
+   yacc.py: 469:Action : Reduce rule [ImportDeclList -> empty] with [None] and goto state 5
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 5
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList . LexToken(FUNC,'func',8,14)
+   yacc.py: 445:Action : Shift and goto state 17
+   yacc.py: 410:
+   yacc.py: 411:State  : 17
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC . LexToken(IDENTIFIER,'main',8,19)
+   yacc.py: 445:Action : Shift and goto state 29
+   yacc.py: 410:
+   yacc.py: 411:State  : 29
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC IDENTIFIER . LexToken(LROUND,'(',8,23)
+   yacc.py: 469:Action : Reduce rule [FunctionName -> IDENTIFIER] with ['main'] and goto state 28
+   yacc.py: 506:Result : <TreeNode @ 0x27ac31163c0> (<code.TreeNode object at 0x0000027AC3116 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 28
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName . LexToken(LROUND,'(',8,23)
+   yacc.py: 445:Action : Shift and goto state 58
+   yacc.py: 410:
+   yacc.py: 411:State  : 58
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName LROUND . LexToken(RROUND,')',8,24)
+   yacc.py: 445:Action : Shift and goto state 98
+   yacc.py: 410:
+   yacc.py: 411:State  : 98
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName LROUND RROUND . LexToken(LCURLY,'{',8,25)
+   yacc.py: 469:Action : Reduce rule [Parameters -> LROUND RROUND] with ['(',')'] and goto state 60
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 60
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Parameters . LexToken(LCURLY,'{',8,25)
+   yacc.py: 469:Action : Reduce rule [Signature -> Parameters] with [None] and goto state 56
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 56
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature . LexToken(LCURLY,'{',8,25)
+   yacc.py: 445:Action : Shift and goto state 96
+   yacc.py: 410:
+   yacc.py: 411:State  : 96
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY . LexToken(IDENTIFIER,'a',9,28)
+   yacc.py: 473:Action : Reduce rule [empty -> <empty>] with [] and goto state 171
+   yacc.py: 548:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 171
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY empty . LexToken(IDENTIFIER,'a',9,28)
+   yacc.py: 469:Action : Reduce rule [ScopeStart -> empty] with [None] and goto state 170
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 170
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart . LexToken(IDENTIFIER,'a',9,28)
+   yacc.py: 445:Action : Shift and goto state 110
+   yacc.py: 410:
+   yacc.py: 411:State  : 110
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart IDENTIFIER . LexToken(COMMA,',',9,29)
+   yacc.py: 469:Action : Reduce rule [PrimaryExpr -> IDENTIFIER] with ['a'] and goto state 118
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30d7ed0> (<code.TreeNode object at 0x0000027AC30D7 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 118
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart PrimaryExpr . LexToken(COMMA,',',9,29)
+   yacc.py: 469:Action : Reduce rule [UnaryExpr -> PrimaryExpr] with [<TreeNode @ 0x27ac30d7ed0>] and goto state 112
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30d7ed0> (<code.TreeNode object at 0x0000027AC30D7 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 112
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart UnaryExpr . LexToken(COMMA,',',9,29)
+   yacc.py: 469:Action : Reduce rule [Expression -> UnaryExpr] with [<TreeNode @ 0x27ac30d7ed0>] and goto state 250
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30d7ed0> (<code.TreeNode object at 0x0000027AC30D7 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 250
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression . LexToken(COMMA,',',9,29)
+   yacc.py: 445:Action : Shift and goto state 224
+   yacc.py: 410:
+   yacc.py: 411:State  : 224
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA . LexToken(IDENTIFIER,'b',9,31)
+   yacc.py: 445:Action : Shift and goto state 110
+   yacc.py: 410:
+   yacc.py: 411:State  : 110
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA IDENTIFIER . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 469:Action : Reduce rule [PrimaryExpr -> IDENTIFIER] with ['b'] and goto state 118
+   yacc.py: 506:Result : <TreeNode @ 0x27ac319c190> (<code.TreeNode object at 0x0000027AC319C ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 118
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA PrimaryExpr . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 469:Action : Reduce rule [UnaryExpr -> PrimaryExpr] with [<TreeNode @ 0x27ac319c190>] and goto state 112
+   yacc.py: 506:Result : <TreeNode @ 0x27ac319c190> (<code.TreeNode object at 0x0000027AC319C ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 112
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA UnaryExpr . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 469:Action : Reduce rule [Expression -> UnaryExpr] with [<TreeNode @ 0x27ac319c190>] and goto state 312
+   yacc.py: 506:Result : <TreeNode @ 0x27ac319c190> (<code.TreeNode object at 0x0000027AC319C ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 312
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA Expression . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 469:Action : Reduce rule [ExpressionBotList -> Expression] with [<TreeNode @ 0x27ac319c190>] and goto state 313
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3138770> (<code.TreeNode object at 0x0000027AC3138 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 313
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Expression COMMA ExpressionBotList . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 469:Action : Reduce rule [ExpressionList -> Expression COMMA ExpressionBotList] with [<TreeNode @ 0x27ac30d7ed0>,',',<TreeNode @ 0x27ac3138770>] and goto state 255
+   yacc.py: 506:Result : <TreeNode @ 0x27ac31388a0> (<code.TreeNode object at 0x0000027AC3138 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 255
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList . LexToken(ASSIGN_OP,':=',9,32)
+   yacc.py: 445:Action : Shift and goto state 339
+   yacc.py: 410:
+   yacc.py: 411:State  : 339
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP . LexToken(DECIMAL_LIT,'10',9,35)
+   yacc.py: 445:Action : Shift and goto state 135
+   yacc.py: 410:
+   yacc.py: 411:State  : 135
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP DECIMAL_LIT . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [decimal_lit -> DECIMAL_LIT] with ['10'] and goto state 131
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 131
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP decimal_lit . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [int_lit -> decimal_lit] with [<TreeNode @ 0x27ac301f770>] and goto state 127
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 127
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP int_lit . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [BasicLit -> int_lit] with [<TreeNode @ 0x27ac301f770>] and goto state 125
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 125
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP BasicLit . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [Literal -> BasicLit] with [<TreeNode @ 0x27ac301f770>] and goto state 123
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 123
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Literal . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [Operand -> Literal] with [<TreeNode @ 0x27ac301f770>] and goto state 120
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 120
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Operand . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [PrimaryExpr -> Operand] with [<TreeNode @ 0x27ac301f770>] and goto state 118
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 118
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP PrimaryExpr . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [UnaryExpr -> PrimaryExpr] with [<TreeNode @ 0x27ac301f770>] and goto state 112
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 112
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP UnaryExpr . LexToken(COMMA,',',9,37)
+   yacc.py: 469:Action : Reduce rule [Expression -> UnaryExpr] with [<TreeNode @ 0x27ac301f770>] and goto state 166
+   yacc.py: 506:Result : <TreeNode @ 0x27ac301f770> (<code.TreeNode object at 0x0000027AC301F ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 166
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression . LexToken(COMMA,',',9,37)
+   yacc.py: 445:Action : Shift and goto state 224
+   yacc.py: 410:
+   yacc.py: 411:State  : 224
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA . LexToken(DECIMAL_LIT,'20',9,38)
+   yacc.py: 445:Action : Shift and goto state 135
+   yacc.py: 410:
+   yacc.py: 411:State  : 135
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA DECIMAL_LIT . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [decimal_lit -> DECIMAL_LIT] with ['20'] and goto state 131
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 131
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA decimal_lit . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [int_lit -> decimal_lit] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 127
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 127
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA int_lit . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [BasicLit -> int_lit] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 125
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 125
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA BasicLit . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [Literal -> BasicLit] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 123
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 123
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA Literal . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [Operand -> Literal] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 120
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 120
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA Operand . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [PrimaryExpr -> Operand] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 118
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 118
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA PrimaryExpr . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [UnaryExpr -> PrimaryExpr] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 112
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 112
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA UnaryExpr . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [Expression -> UnaryExpr] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 312
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe28b0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 312
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA Expression . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [ExpressionBotList -> Expression] with [<TreeNode @ 0x27ac2fe28b0>] and goto state 313
+   yacc.py: 506:Result : <TreeNode @ 0x27ac2fe2cf0> (<code.TreeNode object at 0x0000027AC2FE2 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 313
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP Expression COMMA ExpressionBotList . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [ExpressionList -> Expression COMMA ExpressionBotList] with [<TreeNode @ 0x27ac301f770>,',',<TreeNode @ 0x27ac2fe2cf0>] and goto state 392
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3097850> (<code.TreeNode object at 0x0000027AC3097 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 392
+   yacc.py: 430:Defaulted state 392: Reduce using 156
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ExpressionList ASSIGN_OP ExpressionList . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [ShortVarDecl -> ExpressionList ASSIGN_OP ExpressionList] with [<TreeNode @ 0x27ac31388a0>,':=',<TreeNode @ 0x27ac3097850>] and goto state 252
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3094650> (<code.TreeNode object at 0x0000027AC3094 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 252
+   yacc.py: 430:Defaulted state 252: Reduce using 152
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart ShortVarDecl . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [SimpleStmt -> ShortVarDecl] with [<TreeNode @ 0x27ac3094650>] and goto state 241
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3094650> (<code.TreeNode object at 0x0000027AC3094 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 241
+   yacc.py: 430:Defaulted state 241: Reduce using 21
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart SimpleStmt . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 469:Action : Reduce rule [Statement -> SimpleStmt] with [<TreeNode @ 0x27ac3094650>] and goto state 238
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3094650> (<code.TreeNode object at 0x0000027AC3094 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 238
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Statement . LexToken(SEMICOLON,';',9,40)
+   yacc.py: 445:Action : Shift and goto state 319
+   yacc.py: 410:
+   yacc.py: 411:State  : 319
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Statement SEMICOLON . LexToken(RCURLY,'}',10,42)
+   yacc.py: 473:Action : Reduce rule [empty -> <empty>] with [] and goto state 239
+   yacc.py: 548:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 239
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Statement SEMICOLON empty . LexToken(RCURLY,'}',10,42)
+   yacc.py: 469:Action : Reduce rule [StatementList -> empty] with [None] and goto state 388
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30ce6c0> (<code.TreeNode object at 0x0000027AC30CE ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 388
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart Statement SEMICOLON StatementList . LexToken(RCURLY,'}',10,42)
+   yacc.py: 469:Action : Reduce rule [StatementList -> Statement SEMICOLON StatementList] with [<TreeNode @ 0x27ac3094650>,';',<TreeNode @ 0x27ac30ce6c0>] and goto state 237
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30ce120> (<code.TreeNode object at 0x0000027AC30CE ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 237
+   yacc.py: 430:Defaulted state 237: Reduce using 291
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart StatementList . LexToken(RCURLY,'}',10,42)
+   yacc.py: 473:Action : Reduce rule [empty -> <empty>] with [] and goto state 318
+   yacc.py: 548:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 318
+   yacc.py: 430:Defaulted state 318: Reduce using 17
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart StatementList empty . LexToken(RCURLY,'}',10,42)
+   yacc.py: 469:Action : Reduce rule [ScopeEnd -> empty] with [None] and goto state 317
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 317
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart StatementList ScopeEnd . LexToken(RCURLY,'}',10,42)
+   yacc.py: 445:Action : Shift and goto state 387
+   yacc.py: 410:
+   yacc.py: 411:State  : 387
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature LCURLY ScopeStart StatementList ScopeEnd RCURLY . LexToken(SEMICOLON,';',12,45)
+   yacc.py: 469:Action : Reduce rule [Block -> LCURLY ScopeStart StatementList ScopeEnd RCURLY] with ['{',None,<TreeNode @ 0x27ac30ce120>,None,'}'] and goto state 95
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30ce120> (<code.TreeNode object at 0x0000027AC30CE ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 95
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature Block . LexToken(SEMICOLON,';',12,45)
+   yacc.py: 469:Action : Reduce rule [FunctionBody -> Block] with [<TreeNode @ 0x27ac30ce120>] and goto state 94
+   yacc.py: 506:Result : <TreeNode @ 0x27ac30ce120> (<code.TreeNode object at 0x0000027AC30CE ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 94
+   yacc.py: 430:Defaulted state 94: Reduce using 147
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FUNC FunctionName Signature FunctionBody . LexToken(SEMICOLON,';',12,45)
+   yacc.py: 469:Action : Reduce rule [FunctionDecl -> FUNC FunctionName Signature FunctionBody] with ['func',<TreeNode @ 0x27ac31163c0>,None,<TreeNode @ 0x27ac30ce120>] and goto state 13
+   yacc.py: 506:Result : <TreeNode @ 0x27ac31034d0> (<code.TreeNode object at 0x0000027AC3103 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 13
+   yacc.py: 430:Defaulted state 13: Reduce using 7
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList FunctionDecl . LexToken(SEMICOLON,';',12,45)
+   yacc.py: 469:Action : Reduce rule [TopLevelDecl -> FunctionDecl] with [<TreeNode @ 0x27ac31034d0>] and goto state 10
+   yacc.py: 506:Result : <TreeNode @ 0x27ac31034d0> (<code.TreeNode object at 0x0000027AC3103 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 10
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDecl . LexToken(SEMICOLON,';',12,45)
+   yacc.py: 445:Action : Shift and goto state 27
+   yacc.py: 410:
+   yacc.py: 411:State  : 27
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDecl SEMICOLON . $end
+   yacc.py: 473:Action : Reduce rule [empty -> <empty>] with [] and goto state 11
+   yacc.py: 548:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 11
+   yacc.py: 430:Defaulted state 11: Reduce using 5
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDecl SEMICOLON empty . $end
+   yacc.py: 469:Action : Reduce rule [TopLevelDeclList -> empty] with [None] and goto state 53
+   yacc.py: 506:Result : <NoneType @ 0x7ffd231cab40> (None)
+   yacc.py: 410:
+   yacc.py: 411:State  : 53
+   yacc.py: 430:Defaulted state 53: Reduce using 4
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDecl SEMICOLON TopLevelDeclList . $end
+   yacc.py: 469:Action : Reduce rule [TopLevelDeclList -> TopLevelDecl SEMICOLON TopLevelDeclList] with [<TreeNode @ 0x27ac31034d0>,';',None] and goto state 9
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3103770> (<code.TreeNode object at 0x0000027AC3103 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 9
+   yacc.py: 430:Defaulted state 9: Reduce using 1
+   yacc.py: 434:Stack  : PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDeclList . $end
+   yacc.py: 469:Action : Reduce rule [SourceFile -> PACKAGE IDENTIFIER SEMICOLON ImportDeclList TopLevelDeclList] with ['package','main',';',None,<TreeNode @ 0x27ac3103770>] and goto state 1
+   yacc.py: 506:Result : <TreeNode @ 0x27ac3103770> (<code.TreeNode object at 0x0000027AC3103 ...)
+   yacc.py: 410:
+   yacc.py: 411:State  : 1
+   yacc.py: 434:Stack  : SourceFile . $end
+   yacc.py: 571:Done   : Returning <TreeNode @ 0x27ac3103770> (<code.TreeNode object at 0x0000027AC3103 ...)
+   yacc.py: 572:PLY: PARSE DEBUG END
